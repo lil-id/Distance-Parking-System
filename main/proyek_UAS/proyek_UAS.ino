@@ -48,15 +48,15 @@ void loop() {
    }
    if (jarak <= 3) {
     digitalWrite(4, HIGH);
-    delay(2000);
-    tone(alarm, 2000);
+    delay(1000);
+    tone(alarm, 1000);
     delay(100);
     noTone(alarm);
    }
    else if (jarak <= 9) {
     digitalWrite(4, HIGH);
     delay(100);
-    tone(alarm, 2000);
+    tone(alarm, 1000);
     delay(100);
     noTone(alarm);
     delay(100);
@@ -65,7 +65,7 @@ void loop() {
     
     digitalWrite(4, HIGH);
     delay(100);
-    tone(alarm, 2000);
+    tone(alarm, 1000);
     delay(100);
     noTone(alarm);
     digitalWrite(4, LOW);
@@ -74,5 +74,6 @@ void loop() {
    else {
     delay(100);
     noTone(alarm);
+    digitalWrite(4, LOW);
    }
 }
